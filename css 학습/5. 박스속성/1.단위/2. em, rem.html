@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            font-size: 10px;
+        }
+        body {
+            font-size: 15px;
+        }
+        div {
+            border: 2px solid royalblue;
+        }
+        .root {
+            /* 40 x 20 = 800px */
+            /* width: 40em; */ /*-> width : 800px*/
+            /* html fontsize를 10px로 지정했으므로 10px x 40 = 400px */
+            width: 40rem; /*-> width : 400px*/
+            font-size: 20px;
+        }
+        .parent {
+            width: 50%; /* width : 400px * 0.5 = 200px */
+            font-size: 1.5em; /* em은 자기자신의 폰트 사이즈에 영향을 받음. 따라서 원래 부모의 
+                                 상속을 받아 font-size가 20px이여야 하는데 
+                                 1.5em으로 지정했으므로 20 * 1.5 = 30px이 됨*/
+        }
+        .child {
+            width: 50%;  /*100px */
+        }
+    </style>
+</head>
+<body>
+    <!-- .root>.parent>.child*2 -->
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+</body>
+</html>

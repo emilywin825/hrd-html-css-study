@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {    /* 패딩, 보더로 가로세로가 변하는 걸 방지. 
+               padding, border 사용할 때 거의 디폴트로 같이 사용한다고 생각하면 됨
+               실무에서는 *{ box-sizing:border-box; } 이렇게 모든 속성에 다 걸고 사용 */
+            box-sizing: border-box;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background: orange;
+            padding-top: 100px;
+            margin: 0 auto;
+        }
+/* 좌우에 패딩 : 좌우 길이가 늘어남 */
+        .box{
+            width: 250px;
+            height: 250px;
+            background: tomato;
+            font-size: 2em;
+            color: black;
+            margin : auto;
+            padding: 15px 20px;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 50px auto 100px;
+            padding: 10px; /* 자식인 .card .img-box, .card .text-box에 한번에 여백을 줄 수 있음
+                                margin으로 여백 주려면 .card .img-box, .card .text-box에 각각 margin 넣어줘야 하니까 불편 */
+        }
+
+         .card .img-box{ /*.card 쓰는 이유 : 우선순위 점수 더 받고 유지보수 측며에서 .card의 자식임을 알려주기 위해서 */
+            height: 200px;
+            background-color: lightgray;
+        }
+        .card .text-box{
+            background: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img-box"></div>
+        <p class="text-box">
+            텍스트~~~
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
+        </div>
+    </div>
+</body>
+</html>
