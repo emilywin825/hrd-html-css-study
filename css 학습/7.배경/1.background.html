@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 550PX;
+            height: 350px;
+            border: 4px dashed gray;
+            margin: 0 auto;
+
+            /* 배경 속성 */
+            background-color: orange;
+            background-image: url(../../img/sky.jpg);
+
+            /*                 w    h  */
+            background-size: 150px 100px;  /* 가로 세로 중 하나만 주면 비율 조정 */
+            background-repeat: no-repeat;
+
+            /*                   x축  y축*/
+            /* background-position: 30px 100px; */
+            background-position: left bottom;
+
+            background: url(../../img/sky.jpg) orange no-repeat;
+        }
+        background 속성 사용 시 position과 size를 지정할 때 '/'로 구분하는 데 position / size 순으로 적용됨
+    </style>
+    
+
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
