@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            margin: 20px;
+            text-align: center;
+            line-height: 100px;
+            translate: 1s;
+        }
+
+        .box1:hover{
+            /* 회전효과 */
+            transform: rotate(720deg);
+        }
+        .box2:hover{
+            /* 이동효과 */
+
+            /* position 이동은 영구적인 이동이 필요할 때
+               translate이동은 애니메이션 이동이 필요할 때(같다가 다시 와야할 때) */
+
+            /* transform: translate(220px, -100px); */
+            position: relative; left: 220px; top: -100px;
+        }
+
+        .box3:hover{
+            /* 확대, 축소 */
+            /* 1.2배 확대 */
+            transform: scale(1.2);
+        }
+        .box4:hover{
+            transform: skew(20deg, 10deg);
+        }
+
+        .box5:hover{
+            transform: rotate(360deg) scale(1.2) translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+</body>
+</html>

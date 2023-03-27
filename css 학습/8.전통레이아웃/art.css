@@ -1,0 +1,10 @@
+@import url(../../common.css);
+
+body{
+    background: grey;
+    font-family: 'NGothic', sans-serif;
+}
+#wrapper{
+    width: 60%;
+    background: #fff;
+}

@@ -1,0 +1,84 @@
+@import url(../../common.css);
+body{
+    background: rgb(49, 48, 48);
+    line-height: 1.5em;
+    font-family: '굴림', 'Gulim', serif;
+}
+#wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+/* begin header style */
+#wrapper header{
+    /* border: 1px solid black; */
+    background: #123456;
+}
+header h1{
+    /* border: 1px solid black; */
+    color: yellow;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: '휴먼모음T',cursive;
+}
+header h1 strong{
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+}
+header h1 span{
+    font-size: 2.1rem;
+    font-weight: 550;
+}
+header h1 em{
+    color: rgb(170, 168, 168);
+    font-size: 2em;
+    font-weight: 600;
+}
+/* end header style */
+
+
+/* begin container style */
+.container{
+    background: lightgray;
+}
+.container .menu{
+    /* border: 1px solid black; */
+    float: left;
+    width: 20%;
+    margin-top: 15px;
+}
+ .container .menu li{
+    /* border: 1px solid black; */
+    padding: 5px 18px;
+    font-size: 12px;
+}
+.container .menu a{
+    text-decoration: underline;
+}
+.container .content{
+    /* border: 1px solid black; */
+    width: 80%;
+    float: left;
+    background: white;
+}
+.container .content h2{
+    /* border: 1px solid black; */
+    background: rgb(116, 28, 28);
+    color: yellow;
+    font-family: cursive;
+    font-size: 1.4em;
+    padding: 10px 15px;
+}
+.container .content p{
+    /* border: 1px solid black; */
+    font-size: 0.8em;
+    padding: 20px;
+    text-align: justify;
+}
+footer{
+    /* border: 1px solid black; */
+    background: gray;
+    padding: 10px 15px;
+    font-size: 0.7em;
+}
